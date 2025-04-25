@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problemas hardware</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="navbar">
+    <a href="#home">Home</a>
+    <a href="#news">News</a>
+    <div class="dropdown">
+      <button class="dropbtn">Dropdown
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+  </div>
+      <h1 class="titulo">¿Cual es you problem?</h1>
+      <div>
+        <form action="/buscar" method="get">
+          <input type="text" name="q" placeholder="Buscar...">
+          <button type="submit">Buscar</button>
+        </form>
+      </div>
+      <br>
+    <img src="img/images.jpg" width="400">
+    <form class="formulario" action="" method="post">
+        <label class="letras" for="nombre">Nombre</label>
+        <input class="formulario" type="text" id="nombre" placeholder="tu nombre"/>
+        <br>
+        <br>
+        <label class="letras" for="apellido">Apellido</label>
+        <input class="formulario" type="text" id="apellido" placeholder="tu apelldio"/>
+        <br>
+        <br>
+        <textarea name="opinion" id="opinion" placeholder="Pon una opinion sincera y cuidado con lo decis" 
+        cols="50" rows="4"></textarea>
+    </form>
+    <button type="button">Enviar</button>
+</body>
+</html>
