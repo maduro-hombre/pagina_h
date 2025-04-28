@@ -7,45 +7,47 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="navbar">
-    <a href="#home">Inicio</a>
-    <a href="#news">Noticias</a>
-    <div class="dropdown">
-      <button class="dropbtn">Categoria de Problemas
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="/pagina_h/pagina_porfin/computadora.html">Computadora de Escritorio</a>
-        <a href="#">Notebook</a>
-        <a href="#">Impresora</a>
+    <div class="navbar">
+      <a href="#home">Inicio</a>
+      <a href="#news">Noticias</a>
+      <div class="dropdown">
+        <button class="dropbtn">Categoria de Problemas
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="file:///C:/Users/6to%20TIPP/Desktop/pagina_h/pagina_porfin/computadora.html">Computadora de Escritorio</a>
+          <a href="#">Notebook</a>
+          <a href="#">Impresora</a>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="search-container">
-    <h1>🔍 Soporte Técnico</h1>
-    <div class="search-box">
-        <input 
-            type="text" 
-            id="search-input" 
-            placeholder="Ej: 'PC no enciende'..." 
-            autocomplete="off"
-        >
-        <ul id="suggestions-list"></ul>
+    <div class="main-container">
+    <div class="search-container">
+      <h1>¿Cual es tu problema?</h1>
+      <div class="search-box">
+          <input 
+              type="text" 
+              id="search-input" 
+              placeholder="Ej: 'PC no enciende'..." 
+              autocomplete="off"
+          >
+          <ul id="suggestions-list"></ul>
+      </div>
+      <img src="img/images.jpg" width="400">
+      <form class="formulario" action="" method="post">
+          <label class="letras" for="nombre">Nombre</label>
+          <input class="formulario" type="text" id="nombre" placeholder="tu nombre"/>
+          <br>
+          <br>
+          <label class="letras" for="apellido">Apellido</label>
+          <input class="formulario" type="text" id="apellido" placeholder="tu apelldio"/>
+          <br>
+          <br>
+          <textarea name="opinion" id="opinion" placeholder="Pon una opinion sincera y cuidado con lo decis" 
+          cols="50" rows="4"></textarea>
+      </form>
+      <button type="button">Enviar</button>
     </div>
-    <img src="img/images.jpg" width="400">
-    <form class="formulario" action="" method="post">
-        <label class="letras" for="nombre">Nombre</label>
-        <input class="formulario" type="text" id="nombre" placeholder="tu nombre"/>
-        <br>
-        <br>
-        <label class="letras" for="apellido">Apellido</label>
-        <input class="formulario" type="text" id="apellido" placeholder="tu apelldio"/>
-        <br>
-        <br>
-        <textarea name="opinion" id="opinion" placeholder="Pon una opinion sincera y cuidado con lo decis" 
-        cols="50" rows="4"></textarea>
-    </form>
-    <button type="button">Enviar</button>
 </body>
 </html>
 <script src="script.js"></script>
