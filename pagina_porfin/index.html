@@ -21,14 +21,17 @@
       </div>
     </div>
   </div>
-      <h1 class="titulo">¿Cual es you problem?</h1>
-      <div>
-        <form action="/buscar" method="get">
-          <input type="text" name="q" placeholder="Buscar...">
-          <button type="submit">Buscar</button>
-        </form>
-      </div>
-      <br>
+  <div class="search-container">
+    <h1>🔍 Soporte Técnico</h1>
+    <div class="search-box">
+        <input 
+            type="text" 
+            id="search-input" 
+            placeholder="Ej: 'PC no enciende'..." 
+            autocomplete="off"
+        >
+        <ul id="suggestions-list"></ul>
+    </div>
     <img src="img/images.jpg" width="400">
     <form class="formulario" action="" method="post">
         <label class="letras" for="nombre">Nombre</label>
@@ -43,5 +46,8 @@
         cols="50" rows="4"></textarea>
     </form>
     <button type="button">Enviar</button>
+</body>
+</html>
+<script src="script.js"></script>
 </body>
 </html>
