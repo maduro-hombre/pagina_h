@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fila de Cuadros</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #007BFF; /* Fondo azul */
+      color: white;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 20px;
+      padding: 40px;
+      flex-wrap: wrap; /* Opcional: permite que se ajusten en pantallas pequeñas */
+    }
+
+    .card {
+      background-color: white;
+      color: black;
+      padding: 20px;
+      border-radius: 8px;
+      width: 200px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h3>Problema</h3>
+      <p>. La impresora está encendida y conectada pero no funciona</p>
+    </div>
+    <div class="card">
+      <h3>Posibles Diagnosticos</h3>
+      <p>•	Controladores de impresora desactualizados.
+        •	Conexión incorrecta o problema con el cable USB o red.
+        •	Problemas de configuración de la impresora.
+         </p>
+    </div>
+    <div class="card">
+      <h3>Soluciones</h3>
+      <p>•	Verifica y actualiza los controladores de la impresora.
+        •	Revisa que la impresora esté correctamente conectada y configurada en el sistema.
+        •	Reinicia la impresora y la computadora para intentar resolver posibles bloqueos.                     
+        </p>
+    </div>
+  </div>
+</body>
+</html>

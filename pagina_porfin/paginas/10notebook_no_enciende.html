@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fila de Cuadros</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #007BFF; /* Fondo azul */
+      color: white;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 20px;
+      padding: 40px;
+      flex-wrap: wrap; /* Opcional: permite que se ajusten en pantallas pequeñas */
+    }
+
+    .card {
+      background-color: white;
+      color: black;
+      padding: 20px;
+      border-radius: 8px;
+      width: 200px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h3>Problema</h3>
+      <p>La notebook no enciende</p>
+    </div>
+    <div class="card">
+      <h3>Posibles Diagnosticos</h3>
+      <p>•	Batería descargada o dañada.
+        •	Problema con la placa base o fuente de alimentación.
+        •	Cargador defectuoso.                 
+        </p>
+    </div>
+    <div class="card">
+      <h3>Soluciones</h3>
+      <p>•	Asegúrate de que el cargador esté funcionando y la batería cargada.
+        •	Prueba con otro cargador compatible.
+        •	Revisa si la placa base muestra señales de daño.      
+        </p>
+    </div>
+  </div>
+</body>
+</html>
