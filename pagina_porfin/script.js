@@ -39,12 +39,11 @@ searchInput.addEventListener("input", function() {
     } else {
         // Filtrar sugerencias que coincidan
         const filtered = defaultSuggestions.filter(item => 
-            item.toLowerCase().includes(inputText)
+            item.text.toLowerCase().includes(inputText)  // Cambiado item por item.text
         );
         showSuggestions(filtered);
     }
 });
-
 // Función para mostrar sugerencias en el dropdown
 function showSuggestions(suggestions) {
     suggestionsList.innerHTML = ""; // Limpiar lista
