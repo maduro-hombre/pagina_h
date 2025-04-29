@@ -10,10 +10,15 @@
   align-items: center
 }
 
+.formulariox{
+  color: #f0f0f0;
+}
+
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    color: #ffffff;
+    color: #ff0000;
   }
   
   .navbar {

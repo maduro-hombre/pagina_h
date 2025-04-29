@@ -1,7 +1,8 @@
+
 const searchInput = document.getElementById("search-input");
 const suggestionsList = document.getElementById("suggestions-list");
 const defaultSuggestions = [
-    "La PC enciende, pero no tiene imagen",
+    { text: "La PC enciende, pero no tiene imagen", link: "paginas/computadora.html" },
     "La notebook enciende, pero no tiene imagen",
     "La laptop/notebook se reinicia a cada rato o se cuelga",
     "La PC/notebook enciende pero no bootea",
@@ -47,11 +48,13 @@ searchInput.addEventListener("input", function() {
 // Función para mostrar sugerencias en el dropdown
 function showSuggestions(suggestions) {
     suggestionsList.innerHTML = ""; // Limpiar lista
-    
+
+// crea el elemento con el link
     if (suggestions.length > 0) {
         suggestions.forEach(item => {
             const li = document.createElement("li");
-            li.textContent = item;
+            li.textContent = item.text;
+            li.dataset.link = item.link; // Almacenar el enlace en un atributo de datos
             suggestionsList.appendChild(li);
         });
         suggestionsList.style.display = "block";
@@ -60,11 +63,14 @@ function showSuggestions(suggestions) {
     }
 }
 
-// Clic en una sugerencia → llenar el input
+
+// Clic en una sugerencia te lleva automaticamente al link
 suggestionsList.addEventListener("click", function(e) {
     if (e.target.tagName === "LI") {
-        searchInput.value = e.target.textContent;
-        suggestionsList.style.display = "none";
+        const link = e.target.dataset.link;
+        if (link) {
+            window.location.href = link;
+        }
     }
 });
 
