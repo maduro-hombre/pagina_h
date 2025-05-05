@@ -16,7 +16,7 @@ const defaultSuggestions = [
     { text: "La impresora está encendida y conectada pero no funciona", link: "paginas/12impresora_encendida_no_funca.html" },
     { text: "La impresora está encendida y conectada a Wi-Fi, pero no imprime", link: "paginas/13impresora_encendida_no_imprime.html" },
     { text: "La PC/notebook no tiene acceso a la red o internet", link: "paginas/14pcnotebook_no_acceso_ala_red.html" },
-    { text: "La PC/notebook se conecta a la red, pero no navega", link: "paginas/15pcnotebook_con_red_no_navega" },
+    { text: "La PC/notebook se conecta a la red, pero no navega", link: "paginas/15pcnotebook_con_red_no_navega.html" },
     { text: "Los dispositivos USB no funcionan", link: "paginas/16disp_usb_no_funca.html" },
     { text: "Se instaló un nuevo hardware y la computadora se reinicia seguido o se congela", link: "paginas/17nuevo_hardware_se_reinicia.html" },
     { text: "Se enciende la PC y aparece un mensaje de contraseña necesaria para continuar (antes de cargar el sistema operativo)", link: "paginas/18contra_necesaria.html" },
