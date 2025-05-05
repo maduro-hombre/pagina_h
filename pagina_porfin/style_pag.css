@@ -7,5 +7,66 @@ body {
     margin: 0;                   /* Elimina márgenes predeterminados */
     padding: 0;
     color: white;                /* Color del texto para contraste */
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+    color: #333;
   }
+
+  .contenedor {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+}
+
+/* Lista de enlaces */
+.lista-enlaces {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista-enlaces li {
+    margin-bottom: 1rem;
+}
+
+/* Estilo de los enlaces */
+.enlace-decorado {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    background: #ffffff;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #34495e;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.enlace-decorado:hover {
+    background: #f1f8ff;
+    border-color: #3498db;
+    transform: translateX(5px);
+}
+
+.enlace-decorado .icono {
+    margin-right: 12px;
+    font-size: 1.2em;
+}
+
+/* Opcional: Efecto al hacer clic */
+.enlace-decorado:active {
+    transform: translateX(0);
+    background: #e3f2fd;
+}
